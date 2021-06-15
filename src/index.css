@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* typewriter */
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+/* font-family: 'Special Elite', cursive; */
+
+/* 8-bit */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* font-family: 'Press Start 2P', cursive; */
+
+/* hand-written */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Press+Start+2P&display=swap");
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Press Start 2P', cursive; */
+
+/* Primary */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,900;1,300&display=swap"); /* font-family: 'Source Sans Pro', sans-serif; */
+
+/* secondary */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,700&display=swap");
+/* font-family: 'Source Code Pro', monospace; */
+
+/* barcode */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+/* font-family: 'Libre Barcode 128 Text', cursive; */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+  --ff-typewriter: "Special Elite", cursive;
+  --ff-8bit: "Press Start 2P", cursive;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+  --clr-accent-opac: #16e0bd99;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-h4: 1.1rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-medTitle: 2.5rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+/* General styles */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+section {
+  padding: 5em 2em;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+video {
+  display: block;
+  max-width: 100%;
+}
+strong {
+  font-family: "Special Elite", cursive;
+  font-weight: var(--fw-bold);
+}
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 250ms ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #fff;
+}
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+.section__title {
+  margin-bottom: 0.25em;
+}
+.section__title--intro strong {
+  display: block;
+}
+.section__title--intro {
+  font-weight: var(--fw-reg);
+}
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  padding: 0.25em 1em;
+  margin-bottom: 1em;
 }
