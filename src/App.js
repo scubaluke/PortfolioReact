@@ -4,7 +4,7 @@ import Info from "./components/Info";
 import MyServices from './components/MyServices'
 import AboutMe from './components/AboutMe'
 import MyWork from './components/MyWork';
-
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <MyServices />
         <AboutMe />
         <MyWork />
+        <Footer />
       </div>
     // </Router>
   );
