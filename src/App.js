@@ -6,6 +6,8 @@ import AboutMe from './components/AboutMe'
 import MyWork from './components/MyWork';
 import Footer from './components/Footer'
 import PortfolioPage from './components/PortfolioPage';
+import  data from './components/portfolioPageData'
+const {meditation, mjPuppet, SEL} = data
 
 function App() {
   return (
@@ -19,10 +21,17 @@ function App() {
         <Footer />
       </div>
     </Route>
-    <Route path="/meditation">
-        <PortfolioPage/>
+    <Route path="/meditation" >
+        <PortfolioPage  projectTitle={meditation.projectTitle} projectLink={meditation.projectLink} projectSubtitle={meditation.projectSubtitle} headerParagraph={meditation.headerParagraph} bottomParagraph={meditation.bottomParagraph} src={meditation.src} img={meditation.img} />
+      </Route>
+      <Route path="/puppet" >
+        <PortfolioPage  projectTitle={mjPuppet.projectTitle} projectLink={mjPuppet.projectLink} projectSubtitle={mjPuppet.projectSubtitle} headerParagraph={mjPuppet.headerParagraph} bottomParagraph={mjPuppet.bottomParagraph} src={mjPuppet.src} img={mjPuppet.img} />
+      </Route>
+      <Route path="/sel" >
+        <PortfolioPage  projectTitle={SEL.projectTitle} projectLink={SEL.projectLink} projectSubtitle={SEL.projectSubtitle} headerParagraph={SEL.headerParagraph} bottomParagraph={SEL.bottomParagraph} src={SEL.src} img={SEL.img} />
       </Route>
     </BrowserRouter>
+    
   );
 }
 

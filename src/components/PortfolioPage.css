@@ -2,9 +2,24 @@
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
   .portfolio-item-individual p {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+  a {
+      color: #333;
+      text-decoration: none;
+      margin: auto;
+  }
+  iframe {
+      height: 400px;
+      width: 650px;
+      /* height: 50vh;
+      width: 50vw; */
+      margin: 0 auto;
   }

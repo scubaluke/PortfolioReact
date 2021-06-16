@@ -3,6 +3,10 @@ import PortfolioItem from './PortfolioItem'
 // import {Router} from 'react-router-dom'
 import img from '../img/LukeColor.jpeg'
 import './MyWork.css'
+// images
+import meditationImg from '../img/meditationFear.png'
+import puppetImg from '../img/puppet.png'
+import ticTacToe from '../img/ticTacToe.png'
 
 export default function MyWork() {
     const renderPortfolioItems = portfolioItems.map(item => <PortfolioItem to={item.to} img={item.img}/>)
@@ -13,7 +17,6 @@ export default function MyWork() {
 
             <div className="portfolio">
                 {renderPortfolioItems}
-                
             </div>
         </section>
     )
@@ -22,50 +25,16 @@ export default function MyWork() {
 const portfolioItems = [
     {
         to: '/meditation',
-        img
+        img: meditationImg,
     },
     {
-        to: '/meditation',
-        img
+        to: '/puppet',
+        img: puppetImg
     },
     {
-        to: '/meditation',
-        img
+        to: '/sel',
+        img: ticTacToe
     },
-    {
-        to: '/meditation',
-        img
-    },
-    {
-        to: '/meditation',
-        img
-    },
-    {
-        to: '/meditation',
-        img
-    },
+   
 ]
 
-// <a href="./html/memorygame.html" class="portfolio__item">
-//                             <img src="./img/memoryGame.png" alt="" class="portfolio__img" >
-//                         </a>
-//                           <!-- portfolio item 2 -->
-//                           <a href="./html/ticTacToe.html" class="portfolio__item">
-//                             <img src="./img/TicTacToe.png" alt="" class="portfolio__img" >
-//                         </a>
-//                           <!-- portfolio item 3 -->
-//                           <a href="./html/sailCalculator.html" class="portfolio__item">
-//                             <img src="./img/sailCalculator.png" alt="" class="portfolio__img" >
-//                         </a>
-//                           <!-- portfolio item 4 -->
-//                           <a href="./html/meditation.html" class="portfolio__item">
-//                             <img src="./img/meditation.png" alt="" class="portfolio__img" >
-//                         </a>
-//                           <!-- portfolio item 5 -->
-//                           <a href="./html/mjPuppet.html" class="portfolio__item">
-//                             <img src="./img/mjPuppet.png" alt="puppet website" class="portfolio__img" >
-//                         </a>
-//                           <!-- portfolio item 6 -->
-//                           <a href="./html/greenCoconut.html" class="portfolio__item">
-//                             <img src="./img/greenCoconut.png" alt="" class="portfolio__img" >
-//                         </a>
