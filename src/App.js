@@ -1,14 +1,16 @@
 import './App.css';
-// import { Router } from 'react-router-dom'
+import { BrowserRouter,  Route } from 'react-router-dom'
 import Info from "./components/Info";
 import MyServices from './components/MyServices'
 import AboutMe from './components/AboutMe'
 import MyWork from './components/MyWork';
 import Footer from './components/Footer'
+import PortfolioPage from './components/PortfolioPage';
 
 function App() {
   return (
-    // <Router >
+    <BrowserRouter >
+    <Route path="/" exact>
       <div className="App">
         <Info/>
         <MyServices />
@@ -16,7 +18,11 @@ function App() {
         <MyWork />
         <Footer />
       </div>
-    // </Router>
+    </Route>
+    <Route path="/meditation">
+        <PortfolioPage/>
+      </Route>
+    </BrowserRouter>
   );
 }
 

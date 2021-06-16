@@ -6,7 +6,7 @@ import { faGithubSquare, faTwitterSquare, faFacebook, faLinkedinIn } from "@fort
 export default function footer() {
     return (
         <footer className="footer">
-                <a href="mailto:lukegartland@gmail.com" class="footer__link" >Send Luke a message.</a>
+                <a href="mailto:lukegartland@gmail.com" className="footer__link" >Send Luke a message.</a>
                 <ul className="social-list">
                     <li className="social-list__item" >
                         <a className="social-list__link" href="https://github.com/scubaluke">

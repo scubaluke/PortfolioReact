@@ -1,6 +1,7 @@
 import React from 'react'
 import headshot from '../img/lukeHeadshot.jpg'
 import './Info.css'
+
 export default function Info() {
     return (
         <section className="intro" id="home" >
