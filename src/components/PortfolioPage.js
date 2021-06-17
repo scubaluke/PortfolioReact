@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './PortfolioPage.css'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
