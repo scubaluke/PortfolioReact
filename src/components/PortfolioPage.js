@@ -3,10 +3,15 @@ import './PortfolioPage.css'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
+import ScrollToTop from "./ScrollToTop";
+import Header from "./Header";
+
 export default function PortfolioPage({ projectTitle, projectLink, projectSubtitle, headerParagraph, bottomParagraph, src, img }) {
     return (
       <>
+      <Header/>
         <section className="intro" id="home" >
+            <ScrollToTop />
             <h1 className="section__title section__title--intro" >
                 {projectTitle} 
                 <strong className="long-word">{projectLink}</strong></h1>
