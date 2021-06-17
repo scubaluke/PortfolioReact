@@ -7,6 +7,8 @@ import MyWork from './components/MyWork';
 import Footer from './components/Footer'
 import PortfolioPage from './components/PortfolioPage';
 import  data from './components/portfolioPageData'
+import Resume from './components/Resume'
+import Header from "./components/Header";
 const {meditation, mjPuppet, SEL} = data
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
     <BrowserRouter >
     <Route path="/" exact>
       <div className="App">
+        <Header />
         <Info/>
         <MyServices />
         <AboutMe />
@@ -21,6 +24,9 @@ function App() {
         <Footer />
       </div>
     </Route>
+    <Route path="/resume" >
+        <Resume />
+      </Route>
     <Route path="/meditation" >
         <PortfolioPage  projectTitle={meditation.projectTitle} projectLink={meditation.projectLink} projectSubtitle={meditation.projectSubtitle} headerParagraph={meditation.headerParagraph} bottomParagraph={meditation.bottomParagraph} src={meditation.src} img={meditation.img} />
       </Route>

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './PortfolioPage.css'
 import Footer from './Footer'
+import { Link } from 'react-router-dom'
 
 export default function PortfolioPage({ projectTitle, projectLink, projectSubtitle, headerParagraph, bottomParagraph, src, img }) {
     return (
@@ -18,7 +19,8 @@ export default function PortfolioPage({ projectTitle, projectLink, projectSubtit
                 <p>{headerParagraph}</p>
 
                    <iframe src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                   <a href={projectLink}>Check out project</a>
+
+                  <Link target="_blank"  to={{pathname: `https://www.${projectLink}`}}>here</Link>
              
                 <p>{bottomParagraph}</p>
             </div>

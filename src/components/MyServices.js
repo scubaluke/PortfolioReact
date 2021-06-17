@@ -1,16 +1,28 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import Service from './Service'
 import './MyServices.css'
+
 export default function MyServices() {
+    useEffect(() => {
+        Aos.init({
+            duration:2000,
+            once: true, 
+        });
+    }, [])
     const renderServices = services.map(service => <Service key={service.key} title={service.title} body={service.body} />)
     return (
-        <div>
-            <section className="my-services" id="services" >
-            <h2 className="section__title section__title--services">What I do</h2>
-            {renderServices}
+        
+            <section  className="my-services" id="services" >
+            <h2 data-aos="zoom-out" className="section__title section__title--services">What I do</h2>
+            <div class="services">
+              {renderServices}
+            </div>
             <a href="#work" className="btn">My Work</a>
             </section>
-        </div>
+      
     )
 }
 
