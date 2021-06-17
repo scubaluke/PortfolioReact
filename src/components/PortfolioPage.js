@@ -20,7 +20,7 @@ export default function PortfolioPage({ projectTitle, projectLink, projectSubtit
 
                    <iframe src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-                  <Link target="_blank"  to={{pathname: `https://www.${projectLink}`}}>here</Link>
+                  <Link target="_blank"  to={{pathname: `https://www.${projectLink}`}}>Check out my project</Link>
              
                 <p>{bottomParagraph}</p>
             </div>

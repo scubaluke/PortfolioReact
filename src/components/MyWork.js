@@ -12,7 +12,7 @@ import ticTacToe from '../img/ticTacToe.png'
 export default function MyWork() {
     useEffect(() => {
         Aos.init({
-            duration:1500,
+            duration:2000,
             once: true, 
         });
     }, [])
@@ -20,10 +20,10 @@ export default function MyWork() {
     const renderPortfolioItems = portfolioItems.map(item => <PortfolioItem key={item.img} to={item.to} img={item.img}/>)
     return (
         <section className="my-work" id="work">
-            <h2 data-aos="fade" className="section__title">My Work</h2>
+            <h2 data-aos="flip-down" className="section__title">My Work</h2>
             <p className="section__subtitle--work">A selection of my work.</p>
 
-            <div className="portfolio">
+            <div data-aos="zoom-in-up" className="portfolio">
                 {renderPortfolioItems}
             </div>
         </section>
