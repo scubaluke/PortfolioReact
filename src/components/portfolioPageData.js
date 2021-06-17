@@ -39,7 +39,7 @@ import ticTacToe from '../img/ticTacToe.png'
         The questions asked are stored in an array of objects. This allowed me to easily generate the questions to the user in random order, keeping the game more dynamic. The first key-value pair is the question the second is the answer. This allowed me to use the same array for generating the question in random order, populating the dropdown menu to answer the question and check for the correct answer all with the same array.
         
         The page changes with display none to display flex with a set time out of 20ms to opacity 1 allowing for a smooth transition between displays.`,
-        src: 'https://www.youtube.com/embed/cgx6tuvOQYU?autoplay=1',
+        src: 'https://www.youtube.com/embed/oPuTt1pUinM',
         img: ticTacToe
     }
 }

@@ -1,7 +1,5 @@
 import React from 'react'
 import PortfolioItem from './PortfolioItem'
-// import {Router} from 'react-router-dom'
-import img from '../img/LukeColor.jpeg'
 import './MyWork.css'
 // images
 import meditationImg from '../img/meditationFear.png'
