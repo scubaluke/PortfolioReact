@@ -7,7 +7,7 @@ import puppetImg from '../img/puppet.png'
 import ticTacToe from '../img/ticTacToe.png'
 
 export default function MyWork() {
-    const renderPortfolioItems = portfolioItems.map(item => <PortfolioItem to={item.to} img={item.img}/>)
+    const renderPortfolioItems = portfolioItems.map(item => <PortfolioItem key={item.img} to={item.to} img={item.img}/>)
     return (
         <section className="my-work" id="work">
             <h2 className="section__title">My Work</h2>
