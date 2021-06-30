@@ -17,7 +17,7 @@ export default function MyServices() {
         
             <section  className="my-services" id="services" >
             <h2 data-aos="zoom-out" className="section__title section__title--services">What I do</h2>
-            <div class="services">
+            <div className="services">
               {renderServices}
             </div>
             <a href="#work" className="btn">My Work</a>

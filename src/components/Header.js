@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, { useState } from 'react'
 import ResumeLink from './ResumeLink'
 import './Header.css'
 import { Link } from 'react-router-dom';
@@ -6,8 +6,6 @@ import { useLocation } from 'react-router-dom';
 
 export default function Header() {
     const { pathname } = useLocation();
-console.log(pathname);
-
     const [navOpen, setNavOpen] = useState('');
 
     function handelClick() {
@@ -15,49 +13,34 @@ console.log(pathname);
         document.body.classList.toggle('nav-open')
     }
    
-function handleAClick() {
-    !navOpen ? setNavOpen('nav-open') : setNavOpen('')
-    document.body.classList.toggle('nav-open')
-}
+
 const displayOnHomePage =    <nav className="nav">
-<ul className="nav__list">
+<ul onClick={handelClick} className="nav__list">
     <li className="nav__item">
-        <a onClick={() => handleAClick()} href="#home" className="nav__link">Home</a>
+        <a href="#home" className="nav__link">Home</a>
     </li>
     <li className="nav__item">
-        <a onClick={() => handleAClick()} href="#services" className="nav__link" >Services</a>
+        <a href="#services" className="nav__link" >Services</a>
     </li>
     <li class="nav__item">
-        <a onClick={() => handleAClick()} href="#about" class="nav__link" >About me</a>
+        <a href="#about" class="nav__link" >About me</a>
     </li>
     <li className="nav__item">
-        <a onClick={() => handleAClick()} href="#work" className="nav__link" > My Work</a>
+        <a href="#work" className="nav__link" > My Work</a>
     </li>
     <li className="nav__item">
-        <Link onClick={() => handleAClick()} to="/resume"  className="nav__link" >Resume</Link>
+        <Link to="/resume"  className="nav__link" >Resume</Link>
     </li>
 </ul>
 </nav>
 
 const displayOnAnyOtherPage =    <nav className="nav">
 <ul className="nav__list">
-    {/* <li className="nav__item">
-        <a onClick={() => handleAClick()} href="#home" className="nav__link">Home</a>
-    </li> */}
     <li className="nav__item">
-        <Link onClick={() => handleAClick()} to="/"  className="nav__link" >Home</Link>
-    </li>
-    {/* <li className="nav__item">
-        <a onClick={() => handleAClick()} href="#services" className="nav__link" >Services</a>
-    </li>
-    <li class="nav__item">
-        <a onClick={() => handleAClick()} href="#about" class="nav__link" >About me</a>
+        <Link onClick={handelClick} to="/"  className="nav__link" >Home</Link>
     </li>
     <li className="nav__item">
-        <a onClick={() => handleAClick()} href="#work" className="nav__link" > My Work</a>
-    </li> */}
-    <li className="nav__item">
-        <Link onClick={() => handleAClick()} to="/resume"  className="nav__link" >Resume</Link>
+        <Link onClick={handelClick} to="/resume"  className="nav__link" >Resume</Link>
     </li>
 </ul>
 </nav>
@@ -70,7 +53,7 @@ const displayOnAnyOtherPage =    <nav className="nav">
         <button  onClick={() => handelClick()} className={`nav-toggle ${navOpen}`} aria-label="toggle navigation">
             <span className="hamburger"></span>
         </button>
-      {pathname ===  '/'  ? displayOnHomePage  : displayOnAnyOtherPage}
+      {pathname ===  '/' ? displayOnHomePage : displayOnAnyOtherPage}
     </div>
     )
 }

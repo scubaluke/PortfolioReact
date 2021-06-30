@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom'
 
 import ScrollToTop from "./ScrollToTop";
 import Header from "./Header";
+import portfolioPageData from  './portfolioPageData'
 
-export default function PortfolioPage({ projectTitle, projectLink, projectSubtitle, headerParagraph, bottomParagraph, src, img }) {
+export default function PortfolioPage({match}) {
+    const pageToRender = match.path.substring(1)
+    const { projectTitle, projectLink, projectSubtitle, headerParagraph, bottomParagraph, src, img } = portfolioPageData[pageToRender]
+ 
     return (
       <>
       <Header/>
@@ -19,11 +23,10 @@ export default function PortfolioPage({ projectTitle, projectLink, projectSubtit
             <img src={img} alt="" className="intro__img" />
         </section>
 
-
             <div className="portfolio-item-individual">
                 <p>{headerParagraph}</p>
 
-                   <iframe src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                   <iframe src={src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                   <Link target="_blank"  to={{pathname: `https://www.${projectLink}`}}>Check out my project</Link>
              

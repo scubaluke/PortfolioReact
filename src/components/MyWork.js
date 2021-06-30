@@ -8,7 +8,8 @@ import './MyWork.css'
 import meditationImg from '../img/meditationFear.png'
 import puppetImg from '../img/puppet.png'
 import ticTacToe from '../img/ticTacToe.png'
-
+import proshop from '../img/ProShop.png'
+import data from '../components/portfolioPageData'
 export default function MyWork() {
     useEffect(() => {
         Aos.init({
@@ -16,6 +17,7 @@ export default function MyWork() {
             once: true, 
         });
     }, [])
+
 
     const renderPortfolioItems = portfolioItems.map(item => <PortfolioItem key={item.img} to={item.to} img={item.img}/>)
     return (
@@ -36,7 +38,15 @@ const portfolioItems = [
         img: meditationImg,
     },
     {
-        to: '/puppet',
+        to: '/proshop',
+        img: proshop
+    },
+    {
+        to: '/outstandingly',
+        img: data.outstandingly.img
+    },
+    {
+        to: '/mjpuppet',
         img: puppetImg
     },
     {

@@ -1,43 +1,21 @@
 import './App.css';
 import { BrowserRouter,  Route } from 'react-router-dom'
-import Info from "./components/Info";
-import MyServices from './components/MyServices'
-import AboutMe from './components/AboutMe'
-import MyWork from './components/MyWork';
-import Footer from './components/Footer'
 import PortfolioPage from './components/PortfolioPage';
-import  data from './components/portfolioPageData'
 import Resume from './components/Resume'
-import Header from "./components/Header";
-const {meditation, mjPuppet, SEL} = data
+import HomePage from './components/HomePage';
+
 
 function App() {
   return (
     <BrowserRouter >
-    <Route path="/" exact>
-      <div className="App">
-        <Header />
-        <Info/>
-        <MyServices />
-        <AboutMe />
-        <MyWork />
-        <Footer />
-      </div>
-    </Route>
-    <Route path="/resume" >
-        <Resume />
-      </Route>
-    <Route path="/meditation" >
-        <PortfolioPage  projectTitle={meditation.projectTitle} projectLink={meditation.projectLink} projectSubtitle={meditation.projectSubtitle} headerParagraph={meditation.headerParagraph} bottomParagraph={meditation.bottomParagraph} src={meditation.src} img={meditation.img} />
-      </Route>
-      <Route path="/puppet" >
-        <PortfolioPage  projectTitle={mjPuppet.projectTitle} projectLink={mjPuppet.projectLink} projectSubtitle={mjPuppet.projectSubtitle} headerParagraph={mjPuppet.headerParagraph} bottomParagraph={mjPuppet.bottomParagraph} src={mjPuppet.src} img={mjPuppet.img} />
-      </Route>
-      <Route path="/sel" >
-        <PortfolioPage  projectTitle={SEL.projectTitle} projectLink={SEL.projectLink} projectSubtitle={SEL.projectSubtitle} headerParagraph={SEL.headerParagraph} bottomParagraph={SEL.bottomParagraph} src={SEL.src} img={SEL.img} />
-      </Route>
+    <Route path="/" component={HomePage}  exact />
+      <Route path="/resume" component={Resume} />
+      <Route path="/proshop" component={PortfolioPage}/>
+      <Route path="/outstandingly" component={PortfolioPage}/>
+      <Route path="/meditation" component={PortfolioPage} />
+      <Route path="/mjPuppet" component={PortfolioPage} />
+      <Route path="/SEL" component={PortfolioPage}/>
     </BrowserRouter>
-    
   );
 }
 
