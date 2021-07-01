@@ -18,7 +18,7 @@ export default function PortfolioPage({match}) {
             <ScrollToTop />
             <h1 className="section__title section__title--intro" >
                 {projectTitle} 
-                <strong className="long-word">{projectLink}</strong></h1>
+                <strong className="long-word">{ projectLink.split('.').length > 2 ? projectLink.split('.').slice(0,2).join('.') : projectLink }</strong></h1>
             <p className="section__subtitle section__subtitle--intro">{projectSubtitle}</p>
             <img src={img} alt="" className="intro__img" />
         </section>

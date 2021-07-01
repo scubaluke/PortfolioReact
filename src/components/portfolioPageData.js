@@ -20,16 +20,16 @@ import outstandingly from '../img/outstandingly.png'
         projectSubtitle: `Fullstack e-commerce store`,
         headerParagraph: `This project was build as part of an online class with Brad Traversy. In this class we built a fully functional e-commerce platform from scratch. The MERN stack was used with Redux for state management. The site has user login, a shopping cart running PayPal at checkout, user generated product rating and reviews, as well as admin screens for creating new products and updating orders.`,
         bottomParagraph: `After I finished this class there  were a few bugs I went back and fixed. The main bug being the state of the shopping cart. I created a clear cart action and called it if the user logged out on the cart screen and when an order was placed. `,
-        src: 'https://www.youtube.com/embed/cgx6tuvOQYU?autoplay=1',
+        src: 'https://www.youtube.com/embed/8xFi5ZCaIZo?autoplay=1',
         img: ProShop
     },
     outstandingly: {
         projectTitle: `Outstandinlgy`,
-        projectLink: `https://outstandingly.netlify.app/`,
-        projectSubtitle: `Concept to Deployment Gatsby Site`,
-        headerParagraph: `The goal of this project was to create a dynamic and mobile-responsive landing page for a tech start-up based in San Diego, California. Throughout this project, I worked as lead developer among a three-person team to develop the website from concept to launch. In the early stages of the development of this project, I utilized Figma to create wireframes and mockup the site. Our team utilized Agile and Scrum methodology for our development. As the lead developer, I lead daily standup meetings via zoom with the other team members, assigned tasks, and performed weekly code reviews.`,
+        projectLink: `outstandingly.netlify.app/`,
+        projectSubtitle: `Gatsby Site`,
+        headerParagraph: `The goal of this project was to create a fast, dynamic and mobile-responsive landing page for a cohort concept start-up based in San Diego, California. Throughout this project, I worked among a three-person team to develop the website from concept to launch. In the early stages of the development of this project, I utilized Figma to create wireframes and mockup the site. Our team utilized Agile and Scrum methodology for our development. As the lead developer, I lead daily standup meetings via zoom with the other team members, assigned tasks, and performed weekly code reviews.`,
         bottomParagraph: `This project was coded on Visual Studio Code. I built the project with Gatsby and React and utilized Graphql for image rendering. With future use and scaling in mind, I built reusable components that accepted props to render content. I created a custom drop-down accordion-style FAQ component that accepts props to render the content allowing additional content to be easily added or removed. Additionally, I researched and utilized well-supported NPM packages when necessary including Aos for scroll animations and Formik for form management as well as several other Gatsby required packages for image rendering. Throughout the development of this site our team utilized GitHub for version control, the final product is hosted using Netlify. I enjoyed working on this project and having the opportunity to take on a leadership role. I learned a lot about GatsbyJS and how it works with React to make sites even faster and render images more efficiently.`,
-        src: 'https://www.youtube.com/embed/cgx6tuvOQYU?autoplay=1',
+        src: 'https://www.youtube.com/embed/5GmO6jliyC0?autoplay=1',
         img: outstandingly
     },
     mjPuppet: {

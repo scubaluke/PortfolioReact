@@ -34,16 +34,20 @@ const displayOnHomePage =    <nav className="nav">
 </ul>
 </nav>
 
-const displayOnAnyOtherPage =    <nav className="nav">
-<ul className="nav__list">
-    <li className="nav__item">
-        <Link onClick={handelClick} to="/"  className="nav__link" >Home</Link>
-    </li>
-    <li className="nav__item">
-        <Link onClick={handelClick} to="/resume"  className="nav__link" >Resume</Link>
-    </li>
-</ul>
-</nav>
+const displayOnAnyOtherPage =   
+
+    <nav className="nav">
+    <ul className="nav__list">
+        <li className="nav__item">
+            <Link onClick={handelClick} to="/"  className="nav__link" >Home</Link>
+        </li>
+     {pathname === '/resume' ? '' : (
+       <li className="nav__item">
+            <Link onClick={handelClick} to="/resume"  className="nav__link" >Resume</Link>
+        </li>
+     )}
+    </ul>
+    </nav>
 
     return (
     <div className='header'>
