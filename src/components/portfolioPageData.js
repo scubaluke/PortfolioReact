@@ -3,10 +3,12 @@
 import ticTacToe from '../img/ticTacToe.png'
 import ProShop from '../img/ProShop.png'
 import outstandingly from '../img/outstandingly.png'
+import videoSearch from '../img/videosearch.png'
 
- const data = {
+ export const data = {
     meditation: {
         projectTitle: `Meditation`,
+        to: '/meditation',
         projectLink: `NamaGoMeditate.com`,
         projectSubtitle: `bringing Mindfulness to others`,
         headerParagraph: `I built and designed this meditation website to help bring mindfulness to others.  The webpage has 4 different Mantras for users to repeat to themselves. Each Page contains 23 different mantras that appear in random order along with a photo.  The idea is users can navigate through the page, repeating the mantras to themselves, to bring them back into the present moment, help them move beyond their fear, or put a new positive twist on their day and lives.`,
@@ -16,6 +18,7 @@ import outstandingly from '../img/outstandingly.png'
     },
     proshop: {
         projectTitle: `Pro Shop`,
+        to: '/proshop',
         projectLink: `lukesproshop.herokuapp.com`,
         projectSubtitle: `Fullstack e-commerce store`,
         headerParagraph: `This project was build as part of an online class with Brad Traversy. In this class we built a fully functional e-commerce platform from scratch. The MERN stack was used with Redux for state management. The site has user login, a shopping cart running PayPal at checkout, user generated product rating and reviews, as well as admin screens for creating new products and updating orders.`,
@@ -25,6 +28,7 @@ import outstandingly from '../img/outstandingly.png'
     },
     outstandingly: {
         projectTitle: `Outstandinlgy`,
+        to: '/outstandingly',
         projectLink: `outstandingly.netlify.app/`,
         projectSubtitle: `Gatsby Site`,
         headerParagraph: `The goal of this project was to create a fast, dynamic and mobile-responsive landing page for a cohort concept start-up based in San Diego, California. Throughout this project, I worked among a three-person team to develop the website from concept to launch. In the early stages of the development of this project, I utilized Figma to create wireframes and mockup the site. Our team utilized Agile and Scrum methodology for our development. As the lead developer, I lead daily standup meetings via zoom with the other team members, assigned tasks, and performed weekly code reviews.`,
@@ -34,6 +38,7 @@ import outstandingly from '../img/outstandingly.png'
     },
     mjPuppet: {
         projectTitle: `Merlajean's Parading Puppets`,
+        to: '/mjpuppet',
         projectLink: `mjpuppet.com`,
         projectSubtitle: `A complete re-design`,
         headerParagraph: `This project was a complete redesign of an outdated website. Often times small businesses do not keep up to date with technology changes and their websites suffer.
@@ -46,11 +51,12 @@ import outstandingly from '../img/outstandingly.png'
         Effective use of color, large color contrast makes the page easy for people to see and read.
         Accessible with keyboard, a large bright active border makes it clear what the user is on the page.
         Good use of HTML headings, allows users with screen readers to navigate the page according to its headings and skip or move the the users desired content.`,
-        src: 'https://www.youtube.com/embed/4rlLXXwATXg?autopaly=1',
+        src: 'https://www.youtube.com/embed/4rlLXXwATXg?autoplay=1',
         img: puppetImg
     },
     SEL: {
         projectTitle: `Emotional Learning`,
+        to: '/sel',
         projectLink: `Memory Game`,
         projectSubtitle: `5th Grade level`,
         headerParagraph: `I built and designed this Tic Tac Toe game for SELTrove to use in their social media advertising. Students and educators can play the game as a fun way to learn about the unique lessons SELTrove offers.`,
@@ -61,7 +67,45 @@ import outstandingly from '../img/outstandingly.png'
         The page changes with display none to display flex with a set time out of 20ms to opacity 1 allowing for a smooth transition between displays.`,
         src: 'https://www.youtube.com/embed/oPuTt1pUinM?autoplay=1',
         img: ticTacToe
-    }
+    },
+    video: {
+        projectTitle: `Video search`,
+        to: '/video',
+        projectLink: `lukesyoutube.netlify.app`,
+        projectSubtitle: `React YouTube clone`,
+        headerParagraph: `I built and designed this YouTube clone to search and play videos.  This was a fun project where I put reusable components to work. Pulling data from the YouTube api I was able to dynamically update the page content with user searched content. I utilized the use effect hook to re-render the page on search.`,
+        bottomParagraph: `I enjoyed building this project putting some of my skills to use.`,
+        src: 'https://www.youtube.com/embed/DawmWLIs-H8?autoplay=1',
+        img: videoSearch
+    },
 }
-export default data
+
+export const portfolioItems = [
+    {
+        to: '/meditation',
+        img: meditationImg
+    },
+    {
+        to: '/proshop',
+        img: ProShop
+    },
+    {
+        to: '/outstandingly',
+        img: outstandingly
+    },
+    {
+        to: '/mjpuppet',
+        img: puppetImg
+    },
+    {
+        to: '/sel',
+        img: ticTacToe
+    },
+    {
+        to: '/video',
+        img: videoSearch
+    },
+   
+]
+// export default data
 

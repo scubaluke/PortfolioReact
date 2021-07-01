@@ -4,12 +4,8 @@ import 'aos/dist/aos.css';
 
 import PortfolioItem from './PortfolioItem'
 import './MyWork.css'
-// images
-import meditationImg from '../img/meditationFear.png'
-import puppetImg from '../img/puppet.png'
-import ticTacToe from '../img/ticTacToe.png'
-import proshop from '../img/ProShop.png'
-import data from '../components/portfolioPageData'
+
+import { portfolioItems } from '../components/portfolioPageData'
 export default function MyWork() {
     useEffect(() => {
         Aos.init({
@@ -32,27 +28,5 @@ export default function MyWork() {
     )
 }
 
-const portfolioItems = [
-    {
-        to: '/meditation',
-        img: meditationImg,
-    },
-    {
-        to: '/proshop',
-        img: proshop
-    },
-    {
-        to: '/outstandingly',
-        img: data.outstandingly.img
-    },
-    {
-        to: '/mjpuppet',
-        img: puppetImg
-    },
-    {
-        to: '/sel',
-        img: ticTacToe
-    },
-   
-]
+
 

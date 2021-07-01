@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import ScrollToTop from "./ScrollToTop";
 import Header from "./Header";
-import portfolioPageData from  './portfolioPageData'
+import { data as portfolioPageData} from  './portfolioPageData'
 
 export default function PortfolioPage({match}) {
     const pageToRender = match.path.substring(1)

@@ -15,6 +15,8 @@ function App() {
       <Route path="/meditation" component={PortfolioPage} />
       <Route path="/mjPuppet" component={PortfolioPage} />
       <Route path="/SEL" component={PortfolioPage}/>
+      <Route path="/video" component={PortfolioPage}/>
+
     </BrowserRouter>
   );
 }
