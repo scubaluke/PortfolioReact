@@ -22,7 +22,7 @@ import videoSearch from '../img/videosearch.png'
         projectLink: `lukesproshop.herokuapp.com`,
         projectSubtitle: `Fullstack e-commerce store`,
         headerParagraph: `This project was build as part of an online class with Brad Traversy. In this class we built a fully functional e-commerce platform from scratch. The MERN stack was used with Redux for state management. The site has user login, a shopping cart running PayPal at checkout, user generated product rating and reviews, as well as admin screens for creating new products and updating orders.`,
-        bottomParagraph: `After I finished this class there  were a few bugs I went back and fixed. The main bug being the state of the shopping cart. I created a clear cart action and called it if the user logged out on the cart screen and when an order was placed. `,
+        bottomParagraph: `Im not going to lie, I ran into my fair share of errors during this course. I became very well aquatinted with the chrome dev tools and react / redux extensions. At the end of this class there were a few bugs I went back and fixed. The main bug being the state of the shopping cart. I created a clear cart action and called it if the user logged out on the cart screen and when an order was placed. `,
         src: 'https://www.youtube.com/embed/8xFi5ZCaIZo?autoplay=1',
         img: ProShop
     },

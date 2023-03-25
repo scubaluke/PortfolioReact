@@ -1,5 +1,7 @@
 .my-services {
-    background-color: var(--clr-dark);
+    /* background-color: var(--clr-dark);#252525 */
+    background-color: #252525;
+
     background-image: url(../img/codeBackground.jpg);
     color: var(--clr-light);
     background-size: cover;
